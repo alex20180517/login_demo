@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐盒子</title>
+        <audio id="music" class="music" loop=-1></audio>
+    <link href="css/musicplayer.css" rel="stylesheet" type="text/css">
+    <script src="musicplay.js"></script>
+</head>
+<body onload="initial()">
+    <div class="container">
+        <ul class="main">
+            <li>
+                <img onclick="change_music_1()" src="images/IMG_7602.jpeg" alt="">
+                <div class="flag"></div>
+            </li>
+            <li>
+                <img onclick="change_music_2()" src="images/IMG_7635.jpeg" alt="">
+                <div class="flag"></div>
+            </li>
+            <li>
+                <img onclick="change_music_3()" src="images/IMG_7739.jpeg" alt="">
+                <div class="flag"></div>
+            </li>
+            <li>
+                <img onclick="change_music_4()" src="images/IMG_7570.jpeg" alt="">
+                <div class="flag"></div>
+            </li>
+            <li>
+                <img onclick="change_music_5()" src="images/IMG_7403.jpeg" alt="">
+                <div class="flag"></div>
+            </li>
+        </ul>
+        <div id="music_name" class="music_name"></div>
+        <div id="singer" class="singer"></div>
+        <button id="btn" class="btn" onclick="play()">PLAY</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main img{
+    /* position: absolute; */
+    height: 320px;
+}
+
+.container{
+    width: 500px;
+    height: 800px;
+    background-color: rgba(13, 13, 66, 0.849);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 25px 0px black;
+    border-radius: 10px;
+}
+
+.btn{
+    position: relative;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,0);
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    background: linear-gradient(90deg, #92c9bd, #818181,#a3c9a3,#92c9bd);
+    background-size: 400%;
+    border: 3px solid black;
+    z-index: 1;
+}
+
+.btn:hover{
+    animation: btn_light 16s infinite;
+}
+.btn:hover::before{
+    animation: btn_light 16s infinite;
+}
+
+.btn::after{
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 40px;
+    background-size: 400%;
+    background: linear-gradient(90deg, #92c9bd, #818181,#a3c9a3,#92c9bd);;
+    /* border:1px solid red; */
+    filter: blur(55px);
+    z-index: -1;
+}
+
+@keyframes btn_light{
+    100%{
+        background-position: -400% 0;
+    }
+}
+
+.main{
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    margin: 10% 10%;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0px 0px 55px 0px rgba(13, 13, 66, 0.849);
+}
+
+li{
+    width: 20%;
+    list-style-type: none;
+    float: left;
+    /* border-left: 1px solid white; */
+    position: relative;
+    transition: all 1s;
+}
+
+.flag{
+    position: absolute;
+    left: 20px;
+    top: 100%;
+    color: black;
+}
+
+.main:hover li{
+    width: 10%;
+}
+
+.main li:hover{
+    width: 60%;
+}
+
+.music_name{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+    border-bottom: 1px solid white;
+    transform: translate(-50%,-50%);
+}
+
+.singer{
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    transform: translate(-50%,-50%);
+}

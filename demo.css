@@ -89,7 +89,7 @@ label{
     background: -webkit-linear-gradient(left,transparent,#44eeff);
     left: -100%;
     top: 0px;
-    animation: line1 1s linear infinite;
+    animation: line1 4s linear infinite;
 }
 @keyframes line1 {
     50%,100%{
@@ -102,7 +102,7 @@ label{
     background: -webkit-linear-gradient(top,transparent,#44eeff);
     right: 0%;
     top: -100%;
-    animation: line2 1s 0.25s linear infinite;
+    animation: line2 4s 1s linear infinite;
 }
 @keyframes line2 {
     50%,100%{
@@ -115,7 +115,7 @@ label{
     background: -webkit-linear-gradient(right,transparent,#44eeff);
     left: 100%;
     top: 95%;
-    animation: line3 1s 0.5s linear infinite;
+    animation: line3 4s 2s linear infinite;
 }
 @keyframes line3 {
     50%,100%{
@@ -128,7 +128,7 @@ label{
     background: -webkit-linear-gradient(bottom,transparent,#44eeff);
     left: 0px;
     top: 100%;
-    animation: line4 1s 0.75s linear infinite;
+    animation: line4 4s 3s linear infinite;
 }
 @keyframes line4 {
     50%,100%{
